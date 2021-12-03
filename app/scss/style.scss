@@ -25,3 +25,26 @@ iframe {
     height: $panel_height;
     border-bottom: 1px solid black;
 }
+
+.spiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( #000000, $alpha: .4);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s all;
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    div {
+        color: #fff;
+        fill: #fff;
+    }
+}
